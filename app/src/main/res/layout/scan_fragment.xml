@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    android:layout_centerInParent="true">
+    android:weightSum="1.0">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +14,8 @@
         android:layout_alignParentLeft="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:visibility="invisible"/>
 
     <com.scan4us.scan4travel.fragments.FaceImageView
         android:id="@+id/imageView1"
@@ -37,8 +37,10 @@
 
     <Button
         android:id="@+id/btnAbrir"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="Abrir Galeria"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 </RelativeLayout>
